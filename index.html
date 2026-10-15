@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitoring Prediksi Cuaca</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Monitoring Prediksi Cuaca</h1>
+      <p>Lokasi: Bandung</p>
+
+      <div id="kotakStatus" class="status">
+        <p>Status prakiraan hujan</p>
+        <div id="statusCuaca">Memuat data...</div>
+        <p id="detailCuaca">Mohon tunggu</p>
+      </div>
+
+      <button id="tombolRefresh">Perbarui Data</button>
+
+      <p id="waktuUpdate">Belum ada pembaruan</p>
+
+      <h3>Prakiraan Setiap 2 Jam</h3>
+
+      <div id="daftarCuacaWrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Waktu</th>
+              <th>Suhu</th>
+              <th>Peluang Hujan</th>
+            </tr>
+          </thead>
+
+          <tbody id="daftarCuaca">
+            <tr>
+              <td colspan="3">Mengambil data...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="catatan">
+        Data merupakan prakiraan dari API, bukan pengukuran cuaca langsung di
+        lokasi.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
